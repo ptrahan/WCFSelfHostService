@@ -1,0 +1,6 @@
+
+With the release version do:
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe WCFSelfHostService.exe
+
+To uninstall:
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe /u WCFSelfHostService.exe

@@ -12,17 +12,17 @@ namespace WCFSelfHostService
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        static void Main()
+        static void Main(string[] args)
         {
 #if DEBUG
-            MainService mainService = new MainService();
+            MainService mainService = new MainService(args);
             mainService.OnDebug();
             System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite);
 #else
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new MainService()
+                new MainService(args)
             };
             ServiceBase.Run(ServicesToRun);
 #endif
