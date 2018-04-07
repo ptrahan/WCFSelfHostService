@@ -1,4 +1,4 @@
-﻿namespace Zetalex.WCFSelfHostService
+﻿namespace WCFSelfHostService
 {
     partial class MainService
     {
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             // 
-            // MainService
+            // WCFSelfHostService
             // 
-            this.ServiceName = "MainService";
+            this.ServiceName = "WCFSelfHostService";
 
         }
 
