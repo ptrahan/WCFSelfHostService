@@ -4,3 +4,12 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe WCFSelfHostServi
 
 To uninstall:
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe /u WCFSelfHostService.exe
+
+
+To reserve the web service URL for non-administrator users and accounts.
+As administrator, issue this command in a command prompt window:
+netsh http add urlacl url=http://+:8080/HostedService user={DOMAIN\user}
+
+
+To access the service:
+http://localhost:8080/HostedService

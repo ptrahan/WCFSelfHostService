@@ -4,6 +4,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using WCFSelfHostService.Logger;
 
 namespace WCFSelfHostService
 {
@@ -14,7 +15,9 @@ namespace WCFSelfHostService
         /// </summary>
         static void Main(string[] args)
         {
+            Log.MonitoringLogger.Info("WCFSelfHostService Main");
 #if DEBUG
+            
             MainService mainService = new MainService(args);
             mainService.OnDebug();
             System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite);
